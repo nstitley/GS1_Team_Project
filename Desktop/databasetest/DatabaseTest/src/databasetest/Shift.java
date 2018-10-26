@@ -130,7 +130,7 @@ public class Shift {
         long start_stop_diff = (stop1.getTime() - start1.getTime())/(60*1000);
         long lunch_diff = (lunch_stop1.getTime() - lunch_start1.getTime())/(60*1000);
         
-        return lunch_diff + "minutes)" + description + ":" + sdf.format(start.getTime())+ " - " + sdf.format(stop.getTime()) + "(" + start_stop_diff + "minutes); Lunch " + sdf.format(lunch_start.getTime()) + sdf.format(lunch_stop.getTime()) + "(" 
+        return "minutes" + lunch_diff + description + ":" + sdf.format(start.getTime())+ " - " + sdf.format(stop.getTime()) + "(" + start_stop_diff + "minutes); Lunch " + sdf.format(lunch_start.getTime()) + sdf.format(lunch_stop.getTime()) + "(" 
     }
     
 }
