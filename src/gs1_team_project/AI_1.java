@@ -15,6 +15,14 @@ public class AI_1 extends AI {
         super.matchers.put( "17", Pattern.compile("^17[0-9]{6}") );          // AI #17        
         super.matchers.put( "10", Pattern.compile("^10(.){1,20}[%\\x1D]") ); // AI #10
         super.matchers.put( "10eol", Pattern.compile("^10(.){1,20}$") );     // AI #10 (eol)
+         Pattern p10 = Pattern.compile("^10(.){1,20}[%\\x1D]");
+        Pattern p10eol = Pattern.compile("^10(.){1,20}$");
+        Pattern p11 = Pattern.compile("^11[0-9]{6}");
+        Pattern p12 = Pattern.compile("^12[0-9]{6}");
+        Pattern p13 = Pattern.compile("^13[0-9]{6}");
+        Pattern p15 = Pattern.compile("^15[0-9]{6}");
+        Pattern p16 = Pattern.compile("^16[0-9]{6}");
+        Pattern p17 = Pattern.compile("^17[0-9]{6}");
         
     }
     

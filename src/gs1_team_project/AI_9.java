@@ -15,6 +15,26 @@ public class AI_9 extends AI {
         super.matchers.put( "17", Pattern.compile("^17[0-9]{6}") );          // AI #17        
         super.matchers.put( "10", Pattern.compile("^10(.){1,20}[%\\x1D]") ); // AI #10
         super.matchers.put( "10eol", Pattern.compile("^10(.){1,20}$") );     // AI #10 (eol)
+        Pattern p90 = Pattern.compile("^90(.){1,30}[%\\x1D]");
+        Pattern p90eol = Pattern.compile("^90(.){1,30}$");
+        Pattern p91 = Pattern.compile("^91(.){1,90}[%\\x1D]");
+        Pattern p91eol = Pattern.compile("^91(.){1,90}$");
+        Pattern p92 = Pattern.compile("^92(.){1,90}[%\\x1D]");
+        Pattern p92eol = Pattern.compile("^92(.){1,90}$");
+        Pattern p93 = Pattern.compile("^93(.){1,90}[%\\x1D]");
+        Pattern p93eol = Pattern.compile("^93(.){1,90}$");
+        Pattern p94 = Pattern.compile("^94(.){1,90}[%\\x1D]");
+        Pattern p94eol = Pattern.compile("^94(.){1,90}$");
+        Pattern p95 = Pattern.compile("^95(.){1,90}[%\\x1D]");
+        Pattern p95eol = Pattern.compile("^95(.){1,90}$");
+        Pattern p96 = Pattern.compile("^96(.){1,90}[%\\x1D]");
+        Pattern p96eol = Pattern.compile("^96(.){1,90}$");
+        Pattern p97 = Pattern.compile("^97(.){1,90}[%\\x1D]");
+        Pattern p97eol = Pattern.compile("^97(.){1,90}$");
+        Pattern p98 = Pattern.compile("^98(.){1,90}[%\\x1D]");
+        Pattern p98eol = Pattern.compile("^98(.){1,90}$");
+        Pattern p99 = Pattern.compile("^99(.){1,90}[%\\x1D]");
+        Pattern p99eol = Pattern.compile("^99(.){1,90}$");
         
     }
     
