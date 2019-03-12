@@ -32,8 +32,8 @@ public class AI_2 extends AI {
         Pattern p250eol = Pattern.compile("^250(.){1,30}$");
         Pattern p251 = Pattern.compile("^251(.){1,30}[%\\x1D]");
         Pattern p251eol = Pattern.compile("^251(.){1,30}$");
-        //Pattern p253 = Pattern.compile();
-        //Pattern p253eol = Pattern.compile();
+        Pattern p253 = Pattern.compile("^253(.)(14,30)[%\\x1D]");
+        Pattern p253eol = Pattern.compile("^253(.)(14,30)$");
         Pattern p254 = Pattern.compile("^254(.){1,20}[%\\x1D]");
         Pattern p254eol = Pattern.compile("^254(.){1,20}$");
         Pattern p255 = Pattern.compile("255\\d{14,25}[%\\x1D]");
