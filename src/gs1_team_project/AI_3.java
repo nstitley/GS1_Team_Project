@@ -97,22 +97,533 @@ public class AI_3 extends AI {
         HashMap<String, Object> output = new HashMap<>();
         System.out.println("Found Element String: " + element);
         output.put("title", "NET WEIGHT (kg)");
-        output.put("ai", element.substring(0, 2) );
-        output.put("applicable value", Integer.parseInt( element.substring(2) ));
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
-    public Object parse10(String element) {
+    public Object parse311n(String element) {
         HashMap<String, Object> output = new HashMap<>();
         System.out.println("Found Element String: " + element);
-        output.put("title", "BATCH/LOT");
-        output.put("ai", element.substring(0, 2) );
-        output.put("number", element.substring(2) );
+        output.put("title", "LENGTH (m)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
-    
-    public Object parse10eol(String element) {
-        return ( parse10(element) );
+    public Object parse312n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "WIDTH (m)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse313n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "HEIGHT (m)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse314n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "AREA (m2)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse315n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "NET VOLUME (l)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse316n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "NET VOLUME (m3)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse320n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "NET WEIGHT (lb)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse321n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "LENGTH (i)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse322n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "LENGTH (f)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse323n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "LENGTH (y)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse324n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "WIDTH (i)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse325n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "WIDTH (f)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse326n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "WIDTH (y)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse327n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "HEIGHT (i)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse328n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "HEIGHT (f)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse329n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "HEIGHT (y)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse330n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "GROSS WEIGHT (kg)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse331n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "LENGTH (m), log");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse332n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "WIDTH (m), log");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse333n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "HEIGHT (m), log");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse334n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "AREA (m2), log");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse335n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "VOLUME (l), log");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse336n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "VOLUME (m3), log");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse337n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "KG PER m2");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse340n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "GROSS WEIGHT (lb)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse341n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "LENGTH (i), log");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse342n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "LENGTH (f), log");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse343n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "LENGTH (y), log");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse344n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "WIDTH (i), log");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse345n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "WIDTH (f), log");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse346n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "WIDTH (y), log");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse347n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "HEIGHT (i), log");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse348n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "HEIGHT (f), log");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse349n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "HEIGHT (y), log");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse350n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "AREA (i2)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse351n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "AREA (f2)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse352n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "AREA (y2)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse353n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "AREA (i2), log");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse354n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "AREA (f2), log");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse355n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "AREA (y2), log");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse356n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "NET WEIGHT (t)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse357n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "NET WEIGHT (oz)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse360n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "NET WEIGHT (q)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse361n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "NET WEIGHT (g)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse362n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "VOLUME (q), log");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse363n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "VOLUME (g), log");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse364n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "VOLUME (i3)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse365n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "VOLUME (f3)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse366n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "VOLUME (y3)");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse367n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "VOLUME (i3), log");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse368n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "VOLUME (f3), log");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse369n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "VOLUME (y3), log");
+        output.put("ai", element.substring(0, 3) );
+        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse37(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "COUNT");
+        output.put("ai", element.substring(0, 2) );
+        output.put("Count of items", Integer.parseInt( element.substring(2) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse390n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "AMOUNT");
+        output.put("ai", element.substring(0, 3) );
+        output.put("Applicable amount payable or coupon code", Integer.parseInt( element.substring(4) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse391n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "AMOUNT");
+        output.put("ai", element.substring(0, 3) );
+        output.put("ISO currency code", Integer.parseInt( element.substring(4, 7) ));
+        output.put("Applicable amount payable", Integer.parseInt( element.substring(7) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse392n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "PRICE");
+        output.put("ai", element.substring(0, 3) );
+        output.put("Applicable amount payable", Integer.parseInt( element.substring(4) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse393n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "PRICE");
+        output.put("ai", element.substring(0, 3) );
+        output.put("ISO currency code", Integer.parseInt( element.substring(4, 7) ));
+        output.put("Applicable amount payable", Integer.parseInt( element.substring(7) ));
+        output.put("element", element);
+        return output;
+    }
+    public Object parse394n(String element) {
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        output.put("title", "PRCNT OFF");
+        output.put("ai", element.substring(0, 3) );
+        output.put("Percentage discount of a coupon", Integer.parseInt( element.substring(4) ));
+        output.put("element", element);
+        return output;
     }
 }
