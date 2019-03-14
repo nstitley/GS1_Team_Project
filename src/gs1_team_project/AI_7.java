@@ -91,4 +91,133 @@ public class AI_7 extends AI {
         return ( parse10(element) );
         
     }
+    
+    public Object parse7001(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "NSN");
+        output.put("ai", element.substring(0, 4) );
+        output.put("classification", Integer.parseInt( element.substring(4, 8) ));
+        output.put("country", Integer.parseInt( element.substring(8, 10) ));
+        output.put("number", Integer.parseInt( element.substring(10) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse7001eol(String element) {
+        
+        return ( parse7001(element) );
+        
+    }
+    
+    public Object parse7002(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "MEAT CUT");
+        output.put("ai", element.substring(0, 4) );
+        output.put("classification", Integer.parseInt( element.substring(4) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse7002eol(String element) {
+        
+        return ( parse7002(element) );
+        
+    }
+    
+    public Object parse7003(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "EXPIRY TIME");
+        output.put("ai", element.substring(0, 4) );
+        output.put("year", Integer.parseInt( element.substring(4, 6) ));
+        output.put("month", Integer.parseInt( element.substring(6, 8) ));
+        output.put("day", Integer.parseInt( element.substring(8, 10) ));
+        output.put("hour", Integer.parseInt( element.substring(10, 12) ));
+        output.put("minute", Integer.parseInt( element.substring(12) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse7003eol(String element) {
+        
+        return ( parse7003(element) );
+        
+    }
+    
+    public Object parse7004(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "ACTIVE POTENCY");
+        output.put("ai", element.substring(0, 4) );
+        output.put("active potency", Integer.parseInt( element.substring(4) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse7004eol(String element) {
+        
+        return ( parse7004(element) );
+        
+    }
+    
+    public Object parse7005(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "CATCH AREA");
+        output.put("ai", element.substring(0, 4) );
+        output.put("catch area", Integer.parseInt( element.substring(4) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse7005eol(String element) {
+        
+        return ( parse7005(element) );
+        
+    }
+    
+    public Object parse7006(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "FIRST FREEZE DATE");
+        output.put("ai", element.substring(0, 4) );
+        output.put("year", Integer.parseInt( element.substring(4, 6) ));
+        output.put("month", Integer.parseInt( element.substring(6, 8) ));
+        output.put("day", Integer.parseInt( element.substring(8) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse7006eol(String element) {
+        
+        return ( parse7006(element) );
+        
+    }
+    
 }
