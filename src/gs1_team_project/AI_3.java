@@ -86,7 +86,7 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "VAR. COUNT");
         output.put("ai", element.substring(0, 2) );
-        output.put("variable count of items", Integer.parseInt( element.substring(2) ));
+        output.put("count", Integer.parseInt( element.substring(2) ));
         output.put("element", element);
         return output;
     }
@@ -98,7 +98,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "NET WEIGHT (kg)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -107,7 +108,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "LENGTH (m)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -116,7 +118,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "WIDTH (m)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -125,7 +128,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "HEIGHT (m)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -134,7 +138,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "AREA (m2)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -143,7 +148,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "NET VOLUME (l)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -152,7 +158,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "NET VOLUME (m3)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -161,7 +168,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "NET WEIGHT (lb)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -170,7 +178,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "LENGTH (i)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -179,7 +188,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "LENGTH (f)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -188,7 +198,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "LENGTH (y)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -197,7 +208,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "WIDTH (i)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -206,7 +218,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "WIDTH (f)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -215,7 +228,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "WIDTH (y)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -224,7 +238,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "HEIGHT (i)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -233,7 +248,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "HEIGHT (f)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -242,7 +258,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "HEIGHT (y)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -251,7 +268,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "GROSS WEIGHT (kg)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -260,7 +278,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "LENGTH (m), log");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -269,7 +288,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "WIDTH (m), log");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -278,7 +298,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "HEIGHT (m), log");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -287,7 +308,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "AREA (m2), log");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -296,7 +318,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "VOLUME (l), log");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -305,7 +328,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "VOLUME (m3), log");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -314,7 +338,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "KG PER m2");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -323,7 +348,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "GROSS WEIGHT (lb)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -332,7 +358,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "LENGTH (i), log");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -341,7 +368,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "LENGTH (f), log");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -350,7 +378,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "LENGTH (y), log");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -359,7 +388,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "WIDTH (i), log");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -368,7 +398,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "WIDTH (f), log");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -377,7 +408,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "WIDTH (y), log");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -386,7 +418,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "HEIGHT (i), log");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -395,7 +428,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "HEIGHT (f), log");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -404,7 +438,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "HEIGHT (y), log");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -413,7 +448,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "AREA (i2)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -422,7 +458,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "AREA (f2)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -431,7 +468,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "AREA (y2)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -440,7 +478,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "AREA (i2), log");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -449,7 +488,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "AREA (f2), log");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -458,7 +498,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "AREA (y2), log");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -467,7 +508,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "NET WEIGHT (t)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -476,7 +518,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "NET WEIGHT (oz)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -485,7 +528,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "NET WEIGHT (q)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -494,7 +538,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "NET WEIGHT (g)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -503,7 +548,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "VOLUME (q), log");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -512,7 +558,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "VOLUME (g), log");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -521,7 +568,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "VOLUME (i3)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -530,7 +578,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "VOLUME (f3)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -539,7 +588,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "VOLUME (y3)");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -548,7 +598,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "VOLUME (i3), log");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -557,7 +608,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "VOLUME (f3), log");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -566,7 +618,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "VOLUME (y3), log");
         output.put("ai", element.substring(0, 3) );
-        output.put("applicable value", Integer.parseInt( element.substring(4, 10) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("value", Integer.parseInt( element.substring(4, 10) ));
         output.put("element", element);
         return output;
     }
@@ -575,7 +628,7 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "COUNT");
         output.put("ai", element.substring(0, 2) );
-        output.put("Count of items", Integer.parseInt( element.substring(2) ));
+        output.put("count", Integer.parseInt( element.substring(2) ));
         output.put("element", element);
         return output;
     }
@@ -584,7 +637,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "AMOUNT");
         output.put("ai", element.substring(0, 3) );
-        output.put("Applicable amount payable or coupon code", Integer.parseInt( element.substring(4) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("amount", Integer.parseInt( element.substring(4) ));
         output.put("element", element);
         return output;
     }
@@ -593,8 +647,9 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "AMOUNT");
         output.put("ai", element.substring(0, 3) );
-        output.put("ISO currency code", Integer.parseInt( element.substring(4, 7) ));
-        output.put("Applicable amount payable", Integer.parseInt( element.substring(7) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("currency", Integer.parseInt( element.substring(4, 7) ));
+        output.put("amount", Integer.parseInt( element.substring(7) ));
         output.put("element", element);
         return output;
     }
@@ -603,7 +658,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "PRICE");
         output.put("ai", element.substring(0, 3) );
-        output.put("Applicable amount payable", Integer.parseInt( element.substring(4) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("amount", Integer.parseInt( element.substring(4) ));
         output.put("element", element);
         return output;
     }
@@ -612,8 +668,9 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "PRICE");
         output.put("ai", element.substring(0, 3) );
-        output.put("ISO currency code", Integer.parseInt( element.substring(4, 7) ));
-        output.put("Applicable amount payable", Integer.parseInt( element.substring(7) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("currency", Integer.parseInt( element.substring(4, 7) ));
+        output.put("amount", Integer.parseInt( element.substring(7) ));
         output.put("element", element);
         return output;
     }
@@ -622,7 +679,8 @@ public class AI_3 extends AI {
         System.out.println("Found Element String: " + element);
         output.put("title", "PRCNT OFF");
         output.put("ai", element.substring(0, 3) );
-        output.put("Percentage discount of a coupon", Integer.parseInt( element.substring(4) ));
+        output.put("decimal", element.substring(3, 4) );
+        output.put("discount", Integer.parseInt( element.substring(4) ));
         output.put("element", element);
         return output;
     }
