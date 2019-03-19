@@ -214,10 +214,4 @@ public class AI_7 extends AI {
         
     }
     
-    public Object parse7006eol(String element) {
-        
-        return ( parse7006(element) );
-        
-    }
-    
 } 
