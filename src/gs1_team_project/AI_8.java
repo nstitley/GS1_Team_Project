@@ -90,4 +90,110 @@ public class AI_8 extends AI {
         return ( parse10(element) );
         
     }
+    
+    public Object parse8001(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "DIMENSIONS");
+        output.put("ai", element.substring(0, 4) );
+        output.put("width", Integer.parseInt( element.substring(4, 8) ));
+        output.put("length", Integer.parseInt( element.substring(8, 14) ));
+        output.put("diameter", Integer.parseInt( element.substring(14, 18) ));
+        output.put("winding direction", Integer.parseInt( element.substring(18) ));
+        output.put("splices", Integer.parseInt( element.substring(19) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse8002(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "CMT NO");
+        output.put("ai", element.substring(0, 4) );
+        output.put("serial number", Integer.parseInt( element.substring(4) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse8002eol(String element) {
+        
+        return ( parse8002(element) );
+        
+    }
+    
+    public Object parse8003(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "GRAI");
+        output.put("ai", element.substring(0, 4) );
+        output.put("prefix", Integer.parseInt( element.substring(4, 12) ));
+        output.put("type", Integer.parseInt( element.substring(12, 18) ));
+        output.put("digit", Integer.parseInt( element.substring(18) ));
+        output.put("serial", Integer.parseInt( element.substring(19) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse8003eol(String element) {
+        
+        return ( parse8003(element) );
+        
+    }
+    
+    public Object parse8004(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "GIAI");
+        output.put("ai", element.substring(0, 4) );
+        output.put("prefix", Integer.parseInt( element.substring(4 ) ));
+        output.put("reference", Integer.parseInt( element.substring(4 ) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse8004eol(String element) {
+        
+        return ( parse8004(element) );
+        
+    }
+    public Object parse8005(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "PRICE PER UNIT");
+        output.put("ai", element.substring(0, 4) );
+        output.put("measure", Integer.parseInt( element.substring(4, 10) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse8005eol(String element) {
+        
+        return ( parse8005(element) );
+        
+    }
+    
+    
+    
+    
+    
 }
