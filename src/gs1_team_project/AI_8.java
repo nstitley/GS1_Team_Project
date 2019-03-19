@@ -297,6 +297,112 @@ public class AI_8 extends AI {
         
     }
     
+    public Object parse8011(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "CPID SERIAL");
+        output.put("ai", element.substring(0, 4) );
+        output.put("serial number", Integer.parseInt( element.substring(4) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse8011eol(String element) {
+        
+        return ( parse8011(element) );
+        
+    }
+    
+    public Object parse8012(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "VERSION");
+        output.put("ai", element.substring(0, 4) );
+        output.put("version", Integer.parseInt( element.substring(4) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse8012eol(String element) {
+        
+        return ( parse8012(element) );
+        
+    }
+    
+    public Object parse8013(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "GMN");
+        output.put("ai", element.substring(0, 4) );
+        output.put("GMN", Integer.parseInt( element.substring(4) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse8013eol(String element) {
+        
+        return ( parse8013(element) );
+        
+    }
+    
+    public Object parse8017(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "GSRN - PROVIDER");
+        output.put("ai", element.substring(0, 4) );
+        output.put("prefix", Integer.parseInt( element.substring(4, 12) ));
+        output.put("refernce", Integer.parseInt( element.substring(12, 20) ));
+        output.put("digit", Integer.parseInt( element.substring(21) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse8017eol(String element) {
+        
+        return ( parse8017(element) );
+        
+    }
+    
+    public Object parse8018(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "EXPIRY TIME");
+        output.put("ai", element.substring(0, 4) );
+        output.put("prefix", Integer.parseInt( element.substring(4, 12) ));
+        output.put("reference", Integer.parseInt( element.substring(12, 20) ));
+        output.put("digit", Integer.parseInt( element.substring(21) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse8018eol(String element) {
+        
+        return ( parse8018(element) );
+        
+    }
+    
+    
+    
     
     
     
