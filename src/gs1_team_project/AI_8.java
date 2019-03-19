@@ -159,8 +159,7 @@ public class AI_8 extends AI {
         
         output.put("title", "GIAI");
         output.put("ai", element.substring(0, 4) );
-        output.put("prefix", Integer.parseInt( element.substring(4 ) ));
-        output.put("reference", Integer.parseInt( element.substring(4 ) ));
+        output.put("GIAI", Integer.parseInt( element.substring(4) ));
         output.put("element", element);
         
         return output;
@@ -191,6 +190,117 @@ public class AI_8 extends AI {
         return ( parse8005(element) );
         
     }
+    public Object parse8006(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "ITIP");
+        output.put("ai", element.substring(0, 4) );
+        output.put("GTIN", Integer.parseInt( element.substring(4, 19) ));
+        output.put("piece number", Integer.parseInt( element.substring(19, 22) ));
+        output.put("total", Integer.parseInt( element.substring(22, 24) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse8006eol(String element) {
+        
+        return ( parse8006(element) );
+        
+    }
+    
+    public Object parse8007(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "IBAN");
+        output.put("ai", element.substring(0, 4) );
+        output.put("account number", Integer.parseInt( element.substring(4) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse8007eol(String element) {
+        
+        return ( parse8007(element) );
+        
+    }
+    
+    public Object parse8008(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "PROD TIME");
+        output.put("ai", element.substring(0, 4) );
+        output.put("year", Integer.parseInt( element.substring(4, 6) ));
+        output.put("month", Integer.parseInt( element.substring(6, 8) ));
+        output.put("day", Integer.parseInt( element.substring(8, 10) ));
+        output.put("hour", Integer.parseInt( element.substring(10, 12) ));
+        output.put("minute", Integer.parseInt( element.substring(12, 14) ));
+        output.put("second", Integer.parseInt( element.substring(14, 16)));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse8008eol(String element) {
+        
+        return ( parse8008(element) );
+        
+    }
+    
+    public Object parse8009(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "OPTSEN");
+        output.put("ai", element.substring(0, 4) );
+        output.put("AIM", Integer.parseInt( element.substring(4) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse8009eol(String element) {
+        
+        return ( parse8009(element) );
+        
+    }
+    
+    public Object parse8010(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "CPID");
+        output.put("ai", element.substring(0, 4) );
+        output.put("component", Integer.parseInt( element.substring(4) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse8010eol(String element) {
+        
+        return ( parse8010(element) );
+        
+    }
+    
+    
+    
+    
+    
     
     
     
