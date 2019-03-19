@@ -12,9 +12,27 @@ public class AI_3 extends AI {
         
         super.matchers = new HashMap<>();
         
-        super.matchers.put( "17", Pattern.compile("^17[0-9]{6}") );          // AI #17        
-        super.matchers.put( "10", Pattern.compile("^10(.){1,20}[%\\x1D]") ); // AI #10
-        super.matchers.put( "10eol", Pattern.compile("^10(.){1,20}$") );     // AI #10 (eol)
+        super.matchers.put( "30", Pattern.compile("^30\\d{1,8}[%\\x1D]") );          // AI #17        
+        super.matchers.put( "30eol", Pattern.compile("^10(.){1,20}[%\\x1D]") ); // AI #10
+        super.matchers.put( "310", Pattern.compile("^10(.){1,20}$") );     // AI #10 (eol)
+        super.matchers.put( "311", Pattern.compile("^17[0-9]{6}") );          // AI #17        
+        super.matchers.put( "312", Pattern.compile("^10(.){1,20}[%\\x1D]") ); // AI #10
+        super.matchers.put( "313", Pattern.compile("^10(.){1,20}$") );     // AI #10 (eol)
+        super.matchers.put( "314", Pattern.compile("^17[0-9]{6}") );          // AI #17        
+        super.matchers.put( "315", Pattern.compile("^10(.){1,20}[%\\x1D]") ); // AI #10
+        super.matchers.put( "316", Pattern.compile("^10(.){1,20}$") );     // AI #10 (eol)
+        super.matchers.put( "320", Pattern.compile("^17[0-9]{6}") );          // AI #17        
+        super.matchers.put( "321", Pattern.compile("^10(.){1,20}[%\\x1D]") ); // AI #10
+        super.matchers.put( "322", Pattern.compile("^10(.){1,20}$") );     // AI #10 (eol)
+        super.matchers.put( "323", Pattern.compile("^17[0-9]{6}") );          // AI #17        
+        super.matchers.put( "324", Pattern.compile("^10(.){1,20}[%\\x1D]") ); // AI #10
+        super.matchers.put( "325", Pattern.compile("^10(.){1,20}$") );     // AI #10 (eol)
+        super.matchers.put( "326", Pattern.compile("^17[0-9]{6}") );          // AI #17        
+        super.matchers.put( "327", Pattern.compile("^10(.){1,20}[%\\x1D]") ); // AI #10
+        super.matchers.put( "328", Pattern.compile("^10(.){1,20}$") );     // AI #10 (eol)
+        super.matchers.put( "329", Pattern.compile("^17[0-9]{6}") );          // AI #17        
+        super.matchers.put( "330", Pattern.compile("^10(.){1,20}[%\\x1D]") ); // AI #10
+        super.matchers.put( "331", Pattern.compile("^10(.){1,20}$") );     // AI #10 (eol)
         Pattern p30 = Pattern.compile("^30\\d{1,8}[%\\x1D]");
         Pattern p30eol = Pattern.compile("^30\\d{1,8}$");
         Pattern p310n = Pattern.compile("^310[0-9]{7}");

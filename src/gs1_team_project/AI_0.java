@@ -15,9 +15,6 @@ public class AI_0 extends AI {
         super.matchers.put( "00", Pattern.compile("^00[0-9]{18}") ); // AI #00
         super.matchers.put( "01", Pattern.compile("^01[0-9]{14}") ); // AI #01
         super.matchers.put( "02", Pattern.compile("^02[0-9]{14}") ); // AI #02
-        Pattern p00 = Pattern.compile("^00[0-9]{18}");
-        Pattern p01 = Pattern.compile("^01[0-9]{14}");
-        Pattern p02 = Pattern.compile("^02[0-9]{14}");
         
     }
     
