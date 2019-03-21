@@ -401,6 +401,151 @@ public class AI_8 extends AI {
         
     }
     
+    public Object parse8019(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "SRIN");
+        output.put("ai", element.substring(0, 4) );
+        output.put("Instance number", Integer.parseInt( element.substring(4) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse8019eol(String element) {
+        
+        return ( parse8019(element) );
+        
+    }
+    
+    public Object parse8020(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "REF NO");
+        output.put("ai", element.substring(0, 4) );
+        output.put("reference number", Integer.parseInt( element.substring(4) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse8020eol(String element) {
+        
+        return ( parse8020(element) );
+        
+    }
+    
+    public Object parse8026(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "ITIP CONTENT");
+        output.put("ai", element.substring(0, 4) );
+        output.put("GTIN", Integer.parseInt( element.substring(4, 20) ));
+        output.put("number", Integer.parseInt( element.substring(20, 22) ));
+        output.put("count", Integer.parseInt( element.substring(22, 24) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse8026eol(String element) {
+        
+        return ( parse8026(element) );
+        
+    }
+    
+    public Object parse8110(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "Coupon");
+        output.put("ai", element.substring(0, 4) );
+        output.put("coupon", Integer.parseInt( element.substring(4) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse8110eol(String element) {
+        
+        return ( parse8110(element) );
+        
+    }
+    public Object parse8111(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "POINTS");
+        output.put("ai", element.substring(0, 4) );
+        output.put("coupon", Integer.parseInt( element.substring(4) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse8111eol(String element) {
+        
+        return ( parse8111(element) );
+        
+    }
+    public Object parse8112(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "EXPIRY TIME");
+        output.put("ai", element.substring(0, 4) );
+        output.put("coupon", Integer.parseInt( element.substring(4) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse8112eol(String element) {
+        
+        return ( parse8112(element) );
+        
+    }
+    public Object parse8200(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "PRODUCT URL");
+        output.put("ai", element.substring(0, 4) );
+        output.put("URL", Integer.parseInt( element.substring(4) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse8200eol(String element) {
+        
+        return ( parse8200(element) );
+        
+    }
+    
+    
+    
+    
+    
+    
+    
     
     
     
