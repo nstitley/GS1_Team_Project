@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 422d716948df222c52647b32fa87f674e8cb3e90
 package gs1_team_project;
 
 import java.util.ArrayList;
