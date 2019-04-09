@@ -71,7 +71,7 @@ public class AI_9 extends AI {
     
     public Object parse91eol(String element) {
         
-        return ( parse90(element) );
+        return ( parse91(element) );
         
     }
     
@@ -91,7 +91,7 @@ public class AI_9 extends AI {
     
     public Object parse92eol(String element) {
         
-        return ( parse90(element) );
+        return ( parse92(element) );
         
     }
     
@@ -111,7 +111,7 @@ public class AI_9 extends AI {
     
     public Object parse93eol(String element) {
         
-        return ( parse90(element) );
+        return ( parse93(element) );
         
     }
     
@@ -131,7 +131,7 @@ public class AI_9 extends AI {
     
     public Object parse94eol(String element) {
         
-        return ( parse90(element) );
+        return ( parse94(element) );
         
     }
     
@@ -151,7 +151,7 @@ public class AI_9 extends AI {
     
     public Object parse95eol(String element) {
         
-        return ( parse90(element) );
+        return ( parse95(element) );
         
     }
     
@@ -171,7 +171,7 @@ public class AI_9 extends AI {
     
     public Object parse96eol(String element) {
         
-        return ( parse90(element) );
+        return ( parse96(element) );
         
     }
     
@@ -191,7 +191,7 @@ public class AI_9 extends AI {
     
     public Object parse97eol(String element) {
         
-        return ( parse90(element) );
+        return ( parse97(element) );
         
     }
     
@@ -211,7 +211,7 @@ public class AI_9 extends AI {
     
     public Object parse98eol(String element) {
         
-        return ( parse90(element) );
+        return ( parse98(element) );
         
     }
     
@@ -231,7 +231,7 @@ public class AI_9 extends AI {
     
     public Object parse99eol(String element) {
         
-        return ( parse90(element) );
+        return ( parse99(element) );
         
     }
 } 
