@@ -12,8 +12,8 @@ public class AI_1 extends AI {
         
         super.matchers = new HashMap<>();
                 
-        super.matchers.put( "10", Pattern.compile("^10(.){1,20}[%\\x1D]") ); // AI #10
-        super.matchers.put( "10eol", Pattern.compile("^10(.){1,20}$") );     // AI #10 (eol)    
+        super.matchers.put( "10", Pattern.compile("^10[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]") ); // AI #10
+        super.matchers.put( "10eol", Pattern.compile("^10[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$") );     // AI #10 (eol)    
         super.matchers.put( "11", Pattern.compile("^11[0-9]{6}") );
         super.matchers.put( "12", Pattern.compile("^12[0-9]{6}") );
         super.matchers.put( "13", Pattern.compile("^13[0-9]{6}") );

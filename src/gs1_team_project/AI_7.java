@@ -12,86 +12,46 @@ public class AI_7 extends AI {
         
         super.matchers = new HashMap<>();
         
-        super.matchers.put( "17", Pattern.compile("^17[0-9]{6}") );          // AI #17        
-        super.matchers.put( "10", Pattern.compile("^10(.){1,20}[%\\x1D]") ); // AI #10
-        super.matchers.put( "10eol", Pattern.compile("^10(.){1,20}$") );     // AI #10 (eol)
-        Pattern p7001 = Pattern.compile("^7001[0-9]{13}");
-        Pattern p7002 = Pattern.compile("^8007(.){1,30}[%\\x1D]");
-        Pattern p7002eol = Pattern.compile("^8007(.){1,30}$");
-        Pattern p7003 = Pattern.compile("^7003[0-9]{10}");
-        Pattern p7004 = Pattern.compile("7004\\d{1,4}[%\\x1D]");
-        Pattern p7004eol = Pattern.compile("7004\\d{1,4}$");
-        Pattern p7005 = Pattern.compile("^7005(.){1,12}[%\\x1D]");
-        Pattern p7005eol = Pattern.compile("^7005(.){1,12}$");
-        Pattern p7006 = Pattern.compile("^7006[0-9]{6}");
-        Pattern p7007 = Pattern.compile("7007\\d{6,12}[%\\x1D]");
-        Pattern p7007eol = Pattern.compile("7007\\d{6,12}$");
-        Pattern p7008 = Pattern.compile("^7008(.){1,3}[%\\x1D]");
-        Pattern p7008eol = Pattern.compile("^7008(.){1,3}$");
-        Pattern p7009 = Pattern.compile("^7009(.){1,10}[%\\x1D]");
-        Pattern p7009eol = Pattern.compile("^7009(.){1,10}$");
-        Pattern p7010 = Pattern.compile("^7010(.){1,2}[%\\x1D]");
-        Pattern p7010eol = Pattern.compile("^7010(.){1,2}$");
-        Pattern p7020 = Pattern.compile("^7020(.){1,20}[%\\x1D]");
-        Pattern p7020eol = Pattern.compile("^7020(.){1,20}$");
-        Pattern p7021 = Pattern.compile("^7021(.){1,20}[%\\x1D]");
-        Pattern p7021eol = Pattern.compile("^7021(.){1,20}$");
-        Pattern p7022 = Pattern.compile("^7022(.){1,20}[%\\x1D]");
-        Pattern p7022eol = Pattern.compile("^7022(.){1,20}$");
-        Pattern p7023 = Pattern.compile("^7023(.){1,30}[%\\x1D]");
-        Pattern p7023eol = Pattern.compile("^7023(.){1,30}$");
-        //Pattern p703s = Pattern.compile("shrugs");
-        Pattern p710 = Pattern.compile("^710(.){1,20}[%\\x1D]");
-        Pattern p710eol = Pattern.compile("^710(.){1,20}$");
-        Pattern p711 = Pattern.compile("^711(.){1,20}[%\\x1D]");
-        Pattern p711eol = Pattern.compile("^711(.){1,20}$");
-        Pattern p712 = Pattern.compile("^712(.){1,20}[%\\x1D]");
-        Pattern p712eol = Pattern.compile("^712(.){1,20}$");
-        Pattern p713 = Pattern.compile("^713(.){1,20}[%\\x1D]");
-        Pattern p713eol = Pattern.compile("^713(.){1,20}$");
-        Pattern p714 = Pattern.compile("^714(.){1,20}[%\\x1D]");
-        Pattern p714eol = Pattern.compile("^714(.){1,20}$");
-        //Pattern p... = Pattern.compile("I literally can't even");
-        //Pattern p723s = Pattern.compile("no clue");
+        super.matchers.put( "7001", Pattern.compile("^7001[0-9]{13}") );
+        super.matchers.put( "7002", Pattern.compile("^8007[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}[%\\x1D]") );
+        super.matchers.put( "7002eol", Pattern.compile("^8007[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}$") );
+        super.matchers.put( "7003", Pattern.compile("^7003[0-9]{10}") );
+        super.matchers.put( "7004", Pattern.compile("7004\\d{1,4}[%\\x1D]") );
+        super.matchers.put( "7004eol", Pattern.compile("7004\\d{1,4}$") );
+        super.matchers.put( "7005", Pattern.compile("^7005[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,12}[%\\x1D]") );
+        super.matchers.put( "7005eol", Pattern.compile("^7005[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,12}$") );
+        super.matchers.put( "7006", Pattern.compile("^7006[0-9]{6}") );
+        super.matchers.put( "7007", Pattern.compile("7007\\d{6,12}[%\\x1D]") );
+        super.matchers.put( "7007eol", Pattern.compile("7007\\d{6,12}$") );
+        super.matchers.put( "7008", Pattern.compile("^7008[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,3}[%\\x1D]") );
+        super.matchers.put( "7008eol", Pattern.compile("^7008[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,3}$") );
+        super.matchers.put( "7009", Pattern.compile("^7009[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,10}[%\\x1D]") );
+        super.matchers.put( "7009eol", Pattern.compile("^7009[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,10}$") );
+        super.matchers.put( "7010", Pattern.compile("^7010[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,2}[%\\x1D]") );
+        super.matchers.put( "7010eol", Pattern.compile("^7010[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,2}$") );
+        super.matchers.put( "7020", Pattern.compile("^7020[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]") );
+        super.matchers.put( "7020eol", Pattern.compile("^7020[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$") );
+        super.matchers.put( "7021", Pattern.compile("^7021[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]") );
+        super.matchers.put( "7021eol", Pattern.compile("^7021[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$") );
+        super.matchers.put( "7022", Pattern.compile("^7022[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]") );
+        super.matchers.put( "7022eol", Pattern.compile("^7022[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$") );
+        super.matchers.put( "7023", Pattern.compile("^7023[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}[%\\x1D]") );
+        super.matchers.put( "7023eol", Pattern.compile("^7023[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,30}$") );
+        super.matchers.put( "703s", Pattern.compile("^703[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1, 30}[%\\x1D]") );
+        super.matchers.put( "710", Pattern.compile("^710[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]") );
+        super.matchers.put( "710eol", Pattern.compile("^710[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$") );
+        super.matchers.put( "711", Pattern.compile("^711[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]") );
+        super.matchers.put( "711eol", Pattern.compile("^711[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$") );
+        super.matchers.put( "712", Pattern.compile("^712[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]") );
+        super.matchers.put( "712eol", Pattern.compile("^712[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$") );
+        super.matchers.put( "713", Pattern.compile("^713[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]") );
+        super.matchers.put( "713eol", Pattern.compile("^713[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$") );
+        super.matchers.put( "714", Pattern.compile("^714[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}[%\\x1D]") );
+        super.matchers.put( "714eol", Pattern.compile("^714[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1,20}$") );
+        super.matchers.put( "723s", Pattern.compile("^723[!\"&'()*+,\\-./0-9:;<=>?A-Z_a-z]{1, 32}[%\\x1D]") );
         
     }
-    
-    public Object parse17(String element) {
-        
-        HashMap<String, Object> output = new HashMap<>();
-        System.out.println("Found Element String: " + element);
-        
-        output.put("title", "USE BY OR EXPIRY");
-        output.put("ai", element.substring(0, 2) );
-        output.put("year", Integer.parseInt( element.substring(2, 4) ));
-        output.put("month", Integer.parseInt( element.substring(4, 6) ));
-        output.put("day", Integer.parseInt( element.substring(6, 8) ));
-        output.put("element", element);
-        
-        return output;
-        
-    }
-    
-    public Object parse10(String element) {
-        
-        HashMap<String, Object> output = new HashMap<>();
-        System.out.println("Found Element String: " + element);
-        
-        output.put("title", "BATCH/LOT");
-        output.put("ai", element.substring(0, 2) );
-        output.put("number", element.substring(2) );
-        output.put("element", element);
-        
-        return output;
-        
-    }
-    
-    public Object parse10eol(String element) {
-        
-        return ( parse10(element) );
-        
-    }
-    
+
     public Object parse7001(String element) {
         
         HashMap<String, Object> output = new HashMap<>();
@@ -208,6 +168,301 @@ public class AI_7 extends AI {
         output.put("year", Integer.parseInt( element.substring(4, 6) ));
         output.put("month", Integer.parseInt( element.substring(6, 8) ));
         output.put("day", Integer.parseInt( element.substring(8) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse7007(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "HARVEST DATE");
+        output.put("ai", element.substring(0, 4) );
+        output.put("start year", Integer.parseInt( element.substring(4, 6) ));
+        output.put("start month", Integer.parseInt( element.substring(6, 8) ));
+        output.put("start day", Integer.parseInt( element.substring(8, 10) ));
+        output.put("end year", Integer.parseInt( element.substring(10, 12) ));
+        output.put("end month", Integer.parseInt( element.substring(12, 14) ));
+        output.put("end day", Integer.parseInt( element.substring(14, 16) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse7007eol(String element) {
+        
+        return ( parse7007(element) );
+        
+    }
+    
+    public Object parse7008(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "AQUATIC SPECIES");
+        output.put("ai", element.substring(0, 4) );
+        output.put("species", Integer.parseInt( element.substring(4, 8) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse7008eol(String element) {
+        
+        return ( parse7008(element) );
+        
+    }
+    
+    public Object parse7009(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "FISHING GEAR TYPE");
+        output.put("ai", element.substring(0, 4) );
+        output.put("fishing gear type", Integer.parseInt( element.substring(4, 14) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse7009eol(String element) {
+        
+        return ( parse7009(element) );
+        
+    }
+    
+    public Object parse7010(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "PROD METHOD");
+        output.put("ai", element.substring(0, 4) );
+        output.put("production method", Integer.parseInt( element.substring(4, 6) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse7010eol(String element) {
+        
+        return ( parse7010(element) );
+        
+    }
+    
+    public Object parse7020(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "REFURB LOT");
+        output.put("ai", element.substring(0, 4) );
+        output.put("lot id", Integer.parseInt( element.substring(4, 24) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse7020eol(String element) {
+        
+        return ( parse7020(element) );
+        
+    }
+    
+    public Object parse7021(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "FUNC STAT");
+        output.put("ai", element.substring(0, 4) );
+        output.put("functional status", Integer.parseInt( element.substring(4, 24) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse7021eol(String element) {
+        
+        return ( parse7021(element) );
+        
+    }
+    
+    public Object parse7022(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "REV STAT");
+        output.put("ai", element.substring(0, 4) );
+        output.put("revision status", Integer.parseInt( element.substring(4, 24) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse7022eol(String element) {
+        
+        return ( parse7022(element) );
+        
+    }
+    
+    public Object parse7023(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "GIAI - ASSEMBLY");
+        output.put("ai", element.substring(0, 4) );
+        output.put("giai", Integer.parseInt( element.substring(4, 34) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse7023eol(String element) {
+        
+        return ( parse7023(element) );
+        
+    }
+    
+    public Object parse710(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "NHRN PZN");
+        output.put("ai", element.substring(0, 3) );
+        output.put("nhrn", Integer.parseInt( element.substring(3, 23) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse710eol(String element) {
+        
+        return ( parse710(element) );
+        
+    }
+    
+    public Object parse711(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "NHRN CIP");
+        output.put("ai", element.substring(0, 3) );
+        output.put("nhrn", Integer.parseInt( element.substring(3, 23) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse711eol(String element) {
+        
+        return ( parse711(element) );
+        
+    }
+    
+    public Object parse712(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "NHRN CN");
+        output.put("ai", element.substring(0, 3) );
+        output.put("nhrn", Integer.parseInt( element.substring(3, 23) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse712eol(String element) {
+        
+        return ( parse712(element) );
+        
+    }
+    
+    public Object parse713(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "NHRN DRN");
+        output.put("ai", element.substring(0, 3) );
+        output.put("nhrn", Integer.parseInt( element.substring(3, 23) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse713eol(String element) {
+        
+        return ( parse713(element) );
+        
+    }
+    
+    public Object parse714(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "NHRN AIM");
+        output.put("ai", element.substring(0, 3) );
+        output.put("nhrn", Integer.parseInt( element.substring(3, 23) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse714eol(String element) {
+        
+        return ( parse714(element) );
+        
+    }
+    
+    public Object parse703s(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "PROCESSOR # s");
+        output.put("ai", element.substring(0, 4) );
+        output.put("iso country code", Integer.parseInt( element.substring(4, 7) ));
+        output.put("number of processor", Integer.parseInt( element.substring(7, 37) ));
+        output.put("element", element);
+        
+        return output;
+        
+    }
+    
+    public Object parse723s(String element) {
+        
+        HashMap<String, Object> output = new HashMap<>();
+        System.out.println("Found Element String: " + element);
+        
+        output.put("title", "CERT # s");
+        output.put("ai", element.substring(0, 4) );
+        output.put("certification scheme", Integer.parseInt( element.substring(4, 6) ));
+        output.put("certification reference", Integer.parseInt( element.substring(6, 36) ));
         output.put("element", element);
         
         return output;
