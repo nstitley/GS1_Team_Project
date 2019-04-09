@@ -14,6 +14,7 @@ public class AI {
     
     public Object parse(String code) {
         Object output = null;
+        
         boolean aa = false; //00
         boolean ab = false; //01
         boolean ac = false; //01w0
@@ -102,9 +103,6 @@ public class AI {
         boolean dh = false; //8004
         boolean di = false; //8010
         
-        //Booleans for mandatory codes
-        
-        
             if ((ab && dd) != false){
                 System.out.println("Shutdown");
             }
@@ -163,597 +161,597 @@ public class AI {
                 System.out.println("Shutdown");
             }
             
-            if (ac || ba || ay == true){
+            if (ac == true){
                 if ((ac && (ba || ay)) == true){
-                    System.out.println("ac && (ba || ay");
+                    System.out.println("ac && (ba || ay)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("ac && (ba || ay) Shutdown");
                 }
             }
-            if ( ad || ba || ay || cm == true){
+            if ( ad == true){
                 if ((ad && (ba || ay || cm)) == true){
                     System.out.println("ad && (ba || ay || cm)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("ad && (ba || ay || cm) Shutdown");
                 }
             }
-            if ( af || ba || ay || cm == true){
+            if ( af == true){
                 if ((af && (ba || ay || cm)) == true){
                     System.out.println("af && (ba || ay || cm)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("af && (ba || ay || cm) Shutdown");
                 }
             }
-            if ( ad || as == true){
+            if ( ad == true){
                 if ((ad && as) == true){
                     System.out.println("ad && as");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("ad && as Shutdown");
                 }
             }
-            if ( ae || aa || bb == true){
+            if ( ae == true){
                 if ((ae && (aa && bb)) == true){
                     System.out.println("ae && (aa && bb)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("ae && (aa && bb) Shutdown");
                 }
             }
-            if ( ag || ab || ae || co || cz == true){
+            if ( ag == true){
                 if ((ag && (ab ^ ae ^ co ^ cz)) == true){
                     System.out.println("ag && (ab ^ ae ^ co ^ cz)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("ag && (ab ^ ae ^ co ^ cz) Shutdown");
                 }
             }
-            if ( ah || ab || ae || co || cz == true){
+            if ( ah == true){
                 if ((ah && (ab ^ ae ^ co ^ cz)) == true){
                     System.out.println("ah && (ab ^ ae ^ co ^ cz)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("ah && (ab ^ ae ^ co ^ cz) Shutdown");
                 }
             }
-            if ( aj || ab || ae || co || cz == true){
+            if ( aj == true){
                 if ((aj && (ab ^ ae ^ co ^ cz)) == true){
                     System.out.println("aj && (ab ^ ae ^ co ^ cz)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("aj && (ab ^ ae ^ co ^ cz) Shutdown");
                 }
             }
-            if ( ak || ab || ae || co || cz == true){
+            if ( ak == true){
                 if ((ak && (ab ^ ae ^ co ^ cz)) == true){
                     System.out.println("ak && (ab ^ ae ^ co ^ cz)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("ak && (ab ^ ae ^ co ^ cz) Shutdown");
                 }
             }
-            if ( al || ab || ae || co || cz == true){
+            if ( al == true){
                 if ((al && (ab ^ ae ^ co ^ cz)) == true){
                     System.out.println("al && (ab ^ ae ^ co ^ cz)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("al && (ab ^ ae ^ co ^ cz) Shutdown");
                 }
             }
-            if ( am || ab || ae || co || cz == true){
+            if ( am == true){
                 if ((am && (ab ^ ae ^ co ^ cz)) == true){
                     System.out.println("am && (ab ^ ae ^ co ^ cz)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("am && (ab ^ ae ^ co ^ cz) Shutdown");
                 }
             }
-            if ( ai || cy || bj == true){
+            if ( ai == true){
                 if ((ai && (cy && bj)) == true){
                     System.out.println("ai && (cy && bj)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("ai && (cy && bj) Shutdown");
                 }
             }
-            if ( am || ax == true){
+            if ( am == true){
                 if ((am && ax) == true){
                     System.out.println("am && ax");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("am && ax Shutdown");
                 }
             }
-            if ( an || ab || ae || co || cz == true){
+            if ( an == true){
                 if ((an && (ab ^ ae ^ co ^ cz)) == true){
                     System.out.println("an && (ab ^ ae ^ co ^ cz)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("an && (ab ^ ae ^ co ^ cz) Shutdown");
                 }
             }
-            if ( ao || ab || co == true){
+            if ( ao == true){
                 if ((ao && (ab ^ co)) == true){
                     System.out.println("ao && (ab ^ co)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("ao && (ab ^ co) Shutdown");
                 }
             }
-            if ( ap || ab == true){
+            if ( ap == true){
                 if ((ap && ab) == true){
                     System.out.println("ap && ab");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("ap && ab Shutdown");
                 }
             }
-            if ( aq || ab || ab || co || cz == true){
+            if ( aq == true){
                 if ((aq && (ab ^ ae ^ co ^ cz)) == true){
                     System.out.println("aq && (ab ^ ae ^ co ^ cz)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("aq && (ab ^ ae ^ co ^ cz) Shutdown");
                 }
             }
-            if ( ar || ab || ae || co || cz == true){
+            if ( ar == true){
                 if ((ar && (ab ^ ae ^ co ^ cz)) == true){
                     System.out.println("ar && (ab ^ ae ^ co ^ cz)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("ar && (ab ^ ae ^ co ^ cz) Shutdown");
                 }
             }
-            if ( as || ad || af || cp || da == true){
+            if ( as == true){
                 if ((as && (ad ^ af ^ cp ^ da)) == true){
                     System.out.println("as && (ad ^ af ^ cp ^ da)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("as && (ad ^ af ^ cp ^ da) Shutdown");
                 }
             }
-            if ( at || ab == true){
+            if ( at == true){
                 if ((at && ab) == true){
                     System.out.println("at && ab");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("at && ab Shutdown");
                 }
             }
-            if ( au || ab || co || ao == true){
+            if ( au == true){
                 if ((au && (ab ^ co) && ao) == true){
                     System.out.println("au && (ab ^ co) && ao");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("au && (ab ^ co) && ao Shutdown");
                 }
             }
-            if ( av || ab || co == true){
+            if ( av == true){
                 if ((av && (ab ^ co)) == true){
                     System.out.println("av && (ab ^ co)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("av && (ab ^ co) Shutdown");
                 }
             }
-            if ( aw || bi == true){
+            if ( aw == true){
                 if ((aw && bi) == true){
                     System.out.println("aw && bi");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("aw && bi Shutdown");
                 }
             }
-            if ( ba || ab || ae == true){
+            if ( ba == true){
                 if ((ba && (ab ^ ae)) == true){
                     System.out.println("ba && (ab ^ ae)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("ba && (ab ^ ae) Shutdown");
                 }
             }
-            if ( ay || ab || ae == true){
+            if ( ay == true){
                 if ((ay && (ab ^ ae)) == true){
                     System.out.println("ay && (ab ^ ae)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("ay && (ab ^ ae) Shutdown");
                 }
             }
-            if ( az || aa || ab == true){
+            if ( az == true){
                 if ((az && (aa ^ ab)) == true){
                     System.out.println("az && (aa ^ ab)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("az && (aa ^ ab) Shutdown");
                 }
             }
-            if ( bc || ab == true){
+            if ( bc == true){
                 if ((bc && ab) == true){
                     System.out.println("bc && ab");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("bc && ab Shutdown");
                 }
             }
-            if ( bb || aa || ae || cz == true){
+            if ( bb == true){
                 if ((bb && aa && (ae ^ cz)) == true){
                     System.out.println("bb && aa && (ae ^ cz)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("bb && aa && (ae ^ cz) Shutdown");
                 }
             }
-            if ( bd || cy || bj == true){
+            if ( bd == true){
                 if ((bd && cy && bj) == true){
                     System.out.println("bd && cy && bj");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("bd && cy && bj Shutdown");
                 }
             }
-            if ( bd || ax == true){
+            if ( bd == true){
                 if ((bd && ax) == true){
                     System.out.println("bd && ax");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("bd && ax Shutdown");
                 }
             }
-            if ( be || cy || bj == true){
+            if ( be == true){
                 if ((be && cy && bj) == true){
                     System.out.println("be && cy && bj");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("be && cy && bj Shutdown");
                 }
             }
-            if ( bf || ab || ba || ay == true){
+            if ( bf == true){
                 if ((bf && ab && (ba ^ ay)) == true){
-                    System.out.println("(bf && ab && (ba ^ ay)");
+                    System.out.println("bf && ab && (ba ^ ay)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("bf && ab && (ba ^ ay) Shutdown");
                 }
             }
-            if ( bg || ab || ba || ay == true){
+            if ( bg == true){
                 if ((bg && ab && (ba ^ ay)) == true){
                     System.out.println("bg && ab && (ba ^ ay)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("bg && ab && (ba ^ ay) Shutdown");
                 }
             }
-            if ( bh || ax == true){
+            if ( bh == true){
                 if ((bh && ax) == true){
                     System.out.println("bh && ax");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("bh && ax Shutdown");
                 }
             }
-            if ( df || aa == true){
+            if ( df == true){
                 if ((df && aa) == true){
                     System.out.println("df && aa");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("df && aa Shutdown");
                 }
             }
-            if ( bj || cy == true){
+            if ( bj == true){
                 if ((bj && cy) == true){
                     System.out.println("bj && cy");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("bj && cy Shutdown");
                 }
             }
-            if ( bm || ab || ae || co || cz == true){
+            if ( bm == true){
                 if ((bm && (ab ^ ae ^ co ^ cz)) == true){
                     System.out.println("bm && (ab ^ ae ^ co ^ cz)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("bm && (ab ^ ae ^ co ^ cz) Shutdown");
                 }
             }
-            if ( bn || ab || ae == true){
+            if ( bn == true){
                 if ((bn && (ab ^ ae)) == true){
                     System.out.println("bn && (ab ^ ae)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("bn && (ab ^ ae) Shutdown");
                 }
             }
-            if ( bo || ab || ae == true){
+            if ( bo == true){
                 if ((bo && (ab ^ ae)) == true){
                     System.out.println("bo && (ab ^ ae)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("bo && (ab ^ ae) Shutdown");
                 }
             }
-            if ( bp || ab || ae == true){
+            if ( bp == true){
                 if ((bp && (ab ^ ae)) == true){
                     System.out.println("bp && (ab ^ ae)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("bp && (ab ^ ae) Shutdown");
                 }
             }
-            if ( bq || ab || ae == true){
+            if ( bq == true){
                 if ((bq && (ab ^ ae)) == true){
                     System.out.println("bq && (ab ^ ae)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("bq && (ab ^ ae) Shutdown");
                 }
             }
-            if ( br || ab || ae || bm == true){
+            if ( br == true){
                 if ((br && (ab ^ ae) && bm) == true){
                     System.out.println("br && (ab ^ ae) && bm");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("br && (ab ^ ae) && bm Shutdown");
                 }
             }
-            if ( bz || ab || ae || co || cz == true){
+            if ( bz == true){
                 if ((bz && (ab ^ ae ^ co ^ cz)) == true){
                     System.out.println("bz && (ab ^ ae ^ co ^ cz)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("bz && (ab ^ ae ^ co ^ cz) Shutdown");
                 }
             }
-            if ( ca || ab || ae == true){
+            if ( ca == true){
                 if ((ca && (ab ^ ae)) == true){
                     System.out.println("ca && (ab ^ ae)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("ca && (ab ^ ae) Shutdown");
                 }
             }
-            if ( cb || ab || ae == true){
+            if ( cb == true){
                 if ((cb && (ab ^ ae)) == true){
                     System.out.println("cb && (ab ^ ae)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("cb && (ab ^ ae) Shutdown");
                 }
             }
-            if ( cc || ab || ag == true){
+            if ( cc == true){
                 if ((cc && (ab ^ ag)) == true){
                     System.out.println("cc && (ab ^ ag)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("cc && (ab ^ ag) Shutdown");
                 }
             }
-            if ( cd || ab || ae == true){
+            if ( cd == true){
                 if ((cd && (ab ^ ae)) == true){
                     System.out.println("cd && (ab ^ ae)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("cd && (ab ^ ae) Shutdown");
                 }
             }
-            if ( ce || ab || ae == true){
+            if ( ce == true){
                 if ((ce && (ab ^ ae)) == true){
                     System.out.println("ce && (ab ^ ae)");
                 }
                 else {
-                    System.out.println("Shutdown");
-                }
+                    System.out.println("ce && (ab ^ ae) Shutdown");
+                } 
             }
-            if ( cf || ab || ae == true){
+            if ( cf == true){
                 if ((cf && (ab ^ ae)) == true){
                     System.out.println("cf && (ab ^ ae)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("cf && (ab ^ ae) Shutdown");
                 }
             }
-            if ( cg || ab || ae == true){
+            if ( cg == true){
                 if ((cg && (ab ^ ae)) == true){
                     System.out.println("cg && (ab ^ ae)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("cg && (ab ^ ae) Shutdown");
                 }
             }
-            if ( ch || ab || ae == true){
+            if ( ch == true){
                 if ((ch && (ab ^ ae)) == true){
                     System.out.println("ch && (ab ^ ae)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("ch && (ab ^ ae) Shutdown");
                 }
             }
-            if ( ci || ab || ae == true){
+            if ( ci == true){
                 if ((ci && (ab ^ ae)) == true){
                     System.out.println("ci && (ab ^ ae)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("ci && (ab ^ ae) Shutdown");
                 }
             }
-            if ( bs || ab || ae == true){
+            if ( bs == true){
                 if ((bs && (ab ^ ae)) == true){
                     System.out.println("bs && (ab ^ ae)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("bs && (ab ^ ae) Shutdown");
                 }
             }
-            if ( bu || ab == true){
+            if ( bu == true){
                 if ((bu && ab) == true){
                     System.out.println("bu && ab");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("bu && ab Shutdown");
                 }
             }
-            if ( bv || ab == true){
+            if ( bv == true){
                 if ((bv && ab) == true){
                     System.out.println("bv && ab");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("bv && ab Shutdown");
                 }
             }
-            if ( bw || ab == true){
+            if ( bw == true){
                 if ((bw && ab) == true){
                     System.out.println("bw && ab");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("bw && ab Shutdown");
                 }
             }
-            if ( bx || ab == true){
+            if ( bx == true){
                 if ((bx && ab) == true){
                     System.out.println("bx && ab");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("bx && ab Shutdown");
                 }
             }
-            if ( by || ab == true){
+            if ( by == true){
                 if ((by && ab) == true){
                     System.out.println("by && ab");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("by && ab Shutdown");
                 }
             }
-            if ( cj || ab || co || dg == true){
+            if ( cj == true){
                 if ((cj && (ab ^ co) && dg) == true){
                     System.out.println("cj && (ab ^ co) && dg");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("cj && (ab ^ co) && dg Shutdown");
                 }
             }
-            if ( ck || ab || co == true){
+            if ( ck == true){
                 if ((ck && (ab ^ co)) == true){
                     System.out.println("ck && (ab ^ co)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("ck && (ab ^ co) Shutdown");
                 }
             }
-            if ( cl || ab || co || ck == true){
+            if ( cl == true){
                 if ((cl && (ab ^ co) && ck) == true){
                     System.out.println("cl && (ab ^ co) && ck");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("cl && (ab ^ co) && ck Shutdown");
                 }
             }
-            if ( bt || ab || dh == true){
+            if ( bt == true){
                 if ((bt && (ab ^ dh)) == true){
                     System.out.println("bt && (ab ^ dh)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("bt && (ab ^ dh) Shutdown");
                 }
             }
-            if ( cm || ab == true){
+            if ( cm == true){
                 if ((cm && ab) == true){
                     System.out.println("cm && ab");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("cm && ab Shutdown");
                 }
             }
-            if ( cn || ab || ae == true){
+            if ( cn == true){
                 if ((cn && (ab ^ ae)) == true){
                     System.out.println("cn && (ab ^ ae)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("cn && (ab ^ ae) Shutdown");
                 }
             }
-            if ( cq || cy || bj == true){
+            if ( cq == true){
                 if ((cq && cy && bj) == true){
                     System.out.println("cq && cy && bj");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("cq && cy && bj Shutdown");
                 }
             }
-            if ( cr || ab || ae == true){
+            if ( cr == true){
                 if ((cr && (ab ^ ae)) == true){
                     System.out.println("cr && (ab ^ ae)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("cr && (ab ^ ae) Shutdown");
                 }
             }
-            if ( cs || ab || aa == true){
+            if ( cs == true){
                 if ((cs && (ab ^ aa)) == true){
                     System.out.println("cs && (ab ^ aa)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("cs && (ab ^ aa) Shutdown");
                 }
             }
-            if ( ct || di == true){
+            if ( ct == true){
                 if ((ct && di) == true){
                     System.out.println("ct && di");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("ct && di Shutdown");
                 }
             }
-            if ( cu || ab || co == true){
+            if ( cu == true){
                 if ((cu && (ab ^ co)) == true){
                     System.out.println("cu && (ab ^ co)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("cu && (ab ^ co) Shutdown");
                 }
             }
-            if ( cx || cv || cw == true){
+            if ( cx == true){
                 if ((cx && (cv ^ cw)) == true){
                     System.out.println("cx && (cv ^ cw)");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("cx && (cv ^ cw) Shutdown");
                 }
             }
-            if ( cy || bj == true){
+            if ( cy == true){
                 if ((cy && bj) == true){
                     System.out.println("cy && bj");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("cy && bj Shutdown");
                 }
             }
-            if ( cz || aa || bb == true){
+            if ( cz == true){
                 if ((cz && aa && bb) == true){
                     System.out.println("cz && aa && bb");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("cz && aa && bb Shutdown");
                 }
                 
             }
-            if ( db || ax == true){
+            if ( db == true){
                 if ((db && ax) == true){
                     System.out.println("db && ax");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("db && ax Shutdown");
                 }
             }
-            if ( dc || ab == true){
+            if ( dc == true){
                 if ((dc && ab) == true){
                     System.out.println("dc && ab");
                 }
                 else {
-                    System.out.println("Shutdown");
+                    System.out.println("dc && ab Shutdown");
                 }
             }
             
